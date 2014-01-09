@@ -1,0 +1,426 @@
+* {
+    border: 0 none;
+    margin: 0;
+    outline: medium none;
+    padding: 0;
+    vertical-align: baseline;
+}
+html {
+}
+body {
+    background: url("../images/overall_bg.png") repeat-x scroll 0 -30px #63cef2;
+    color: #555555;
+    font-family: 'proxima-nova',sans-serif;
+    font-size: 17px;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+p {
+    padding-bottom: 12px;
+}
+ul, ol {
+    padding: 10px 40px 12px 20px;
+}
+li {
+    padding-bottom: 10px;
+}
+sup {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+optgroup option {
+    padding-left: 15px;
+}
+blockquote {
+    padding-left: 20px;
+    quotes: none;
+}
+textarea {
+    line-height: 18px;
+    min-height: 36px;
+}
+a {
+    color: #385B84;
+    text-decoration: none;
+}
+
+object, embed, video {
+    outline: medium none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table td, table th{
+	border: 1px solid #385b84;
+	padding: 5px 10px;
+}
+table tr.blue{
+	background-color: #8fdcf6;
+	color:#385b84;
+}
+table tr.white{
+	background-color: white;
+	color: #333;
+}
+table tr.first{
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+table tr.last{
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+h1 {
+    font-size: 26px;
+    font-weight: normal;
+    margin: 0 !important;
+}
+h2 {
+    color: #444444;
+    font-family: 'ClarendonFSMedium',Georgia,"Times New Roman",Times,serif;
+    font-size: 28px;
+    font-weight: normal;
+    margin: 0 !important;
+    padding-bottom: 10px;
+}
+h3 {
+    color: #464647;
+    font-family: 'ClarendonFSMedium',Georgia,"Times New Roman",Times,serif;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    margin: 0 !important;
+    padding: 10px 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+h4 {
+    color: #777777;
+    font-family: 'ClarendonFSMedium',Georgia,"Times New Roman",Times,serif;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+}
+label.error {
+    color: #FF0000;
+    display: none;
+    padding-left: 5px;
+}
+.clear {
+    clear: both;
+    font-size: 1px;
+    line-height: 1px;
+}
+.green {
+    color: #779922;
+}
+.center {
+    text-align: center;
+}
+.proxima {
+    font-family: 'proxima-nova',Verdana,Helvetica;
+}
+.normal {
+    font-style: normal;
+}
+.black {
+    color: #000000;
+}
+.phone{
+	color:white;
+	font-family: 'ClarendonFSMedium',Georgia,"Times New Roman",Times,serif;
+	font-size: 29px;
+	text-align: center;
+	text-decoration: none;
+}
+.center{
+	padding: 5px 0;
+	text-align: center;
+}
+.blueheading{
+	color: #385b84; 
+	text-align: left;
+	padding: 5px 30px 5px 0;
+	text-decoration:underline;
+}
+.blueheadingsmall{
+	color: #385b84; 
+	text-align: left;
+	padding: 5px 30px 5px 0;
+	text-transform: none;
+}
+.expand{
+	background: url(../images/down.png) no-repeat right top;
+}
+.expand:hover{
+	cursor: pointer;
+}
+.collapse{
+	background: url(../images/up.png) no-repeat right top;
+}
+.collapse:hover{
+	cursor: pointer;
+}
+.hide{
+	display: none;
+}
+
+#overall {
+
+    width: 100%;
+}
+#container {
+    margin: 0 auto;
+    width: 940px;
+}
+/********* Header content ********/
+header{
+	background-color: white;
+	width: 940px;
+	height:100px;
+	position: relative;
+}
+header h1#logo{
+	background: url(../images/logo.png) no-repeat scroll 0 0;
+	height: 100px;
+	overflow: hidden;
+	text-indent: -100em;
+	width: 133px;
+}
+header h1#logo a{
+	display: block; /*this puts the hotspot on the image even if the text-indent is set to -100em*/
+	height: 100px;
+	width: 133px;
+}
+
+header h2#site_title{
+    font-family: 'proxima-nova',Verdana,Helvetica;
+    right: 220px;
+	padding: 55px 0 0 50px;
+	position: absolute;
+	top: -4px;
+}
+header span#ohana{
+	font-size: 14px;
+	font-style: italic;
+}
+nav{
+	background: url(../images/wave.png) no-repeat left bottom #63cef2;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	height: 105px;
+	position: relative;
+	top: 5px;
+}
+nav ul{
+	display: inline;
+	position: relative;
+	left: 101px;
+	top: 35px;
+}
+nav ul li{
+	display: inline;
+	list-style: none;
+	position: relative;
+}
+nav ul li a{
+	color: #3d4249;
+	font-size: 20px;
+	text-decoration: none;
+	text-shadow:1px 1px 2px #333;
+	text-transform: uppercase;
+	padding: 3px 20px;
+}
+nav ul li a:hover{
+	color:white;
+}
+nav ul li a.active{
+	color: white;
+	border-radius: 5px;
+}
+nav ul li #contact{
+	left: 0;
+	position: absolute;
+	top: 12px;
+	width: 160px;
+	z-index: 100;
+}
+nav ul li #contact li{
+	background-color: #63cef2;
+	border-collapse: collapse;
+	display: block;
+	border: 1px solid white;
+	padding: 5px 0 0 0;
+	width: 160px;
+}
+nav ul li #contact li a{
+	font-size: 15px;
+	text-shadow: none;
+}
+
+nav ul li #contact li.first{
+	border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+}
+nav ul li #contact li.last{
+	border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+}
+nav ul li ul{
+	display: none;
+}
+nav ul li:hover ul{
+	display: block;
+}
+#canvas{
+	background-color:white;
+	height: 260px;
+	overflow: hidden;
+	top: 6px;
+	width: 940px;		
+}
+#canvas div{
+	background-color: #eee;	
+	height: 260px;
+	width: 940px;
+	overflow: hidden;
+}
+#callouts{
+	position: relative;
+	top: -225px;
+	right: -8px;
+}
+#callouts div{
+	background: url(../images/callout_bg.png) no-repeat;
+	color: #333;
+	font-size: 24px;
+	height: 40px;
+	padding: 30px 10px;
+	text-align: center;
+	width: 324px;
+}
+/********** Content ************/
+#contentbody{
+	background-color:white;
+	padding: 35px 20px 25px 30px;
+	position: relative;
+	top: -95px;
+}
+#maincontent{
+	float:left;
+	line-height: 180%;
+	min-height: 800px !important;
+	height: auto;
+	padding-right: 0 20px 40px 0;
+	width: 63%;
+}
+
+#sidebar{
+	background-color: #8fdcf6;
+	border-radius: 5px;
+	float:right;
+	padding: 20px 20px;
+	width: 30%;	
+}
+#quotes{
+	color: #385b84;
+	font-size: 16px;
+	font-style: italic;
+	line-height: 160%;
+	width: 265px;
+}
+#quotes div{
+background: none repeat scroll 0 0 transparent !important;
+    padding: 3px 0;
+    width: 260px;
+   }
+.quotee{
+	color: #385b84;
+	float: right;
+	font-size: 18px;
+	padding-bottom: 25px;
+}
+form{
+padding: 10px 0;
+}
+form input{
+	border: 1px solid #43a8ca;
+    border-radius: 3px;
+    color: #4b5053;
+    font-family: 'proxima-nova',sans-serif;
+	font-size: 14px;
+	height: 20px;
+	padding: 5px 3px;
+	width: 265px;
+}
+form textarea{
+	border: 1px solid #43a8ca;
+	border-radius: 3px;
+	color: #4b5053;
+    font-family: 'proxima-nova',sans-serif;
+	font-size: 14px;
+	padding: 5px 3px;
+	width: 265px;
+}
+.sendBtn{
+	background-color: #0abdfa;
+	border: 1px solid #43a8ca;
+	border-radius: 3px;
+	color:white;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+	width: 100px;
+	height:29px;
+}
+
+/******* Footer ************/
+#footer{
+	background-color: #63cef2;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	padding: 30px 30px;
+	position:relative;
+	top: -95px;
+}
+#footer footer #col1{
+	font-size: 14px;
+	float:left;
+}
+#footer footer #col2{
+	float: right;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 120%;
+	padding: 10px 20px;
+	width: 300px;
+}
+#footer footer #col3{
+	padding: 5px 5px;
+}
+#footer ul{
+	display: inline;
+	float: left;
+	list-style: none;
+	padding: 0 10px;
+}
+#footer ul li{
+	padding: 1px 0 ;
+	margin: 0 0;
+}
+#footer a{
+	color: #555;
+	text-decoration: none;
+}
+#footer a:hover{
+	color:white;
+}
+#footer a.phone{
+	color: white;
+}
